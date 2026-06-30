@@ -1,0 +1,94 @@
+{
+  "sectionTitle": "Beats & Audio Library",
+  "sectionSubtitle": "Listen to original beats, instrumentals, and audio productions. Stream, download, or purchase licenses for your projects.",
+  "sectionLabel": "🎶 Audio Production",
+  "beats": [
+    {
+      "id": "b1",
+      "title": "Afro Fusion Heat",
+      "genre": "Amapiano",
+      "bpm": 120,
+      "duration": "3:42",
+      "coverEmoji": "🎹",
+      "audioFile": "audio/beat-sample-1.mp3",
+      "tags": ["Amapiano", "Afrobeat", "Dance"],
+      "isFree": false,
+      "freeLabel": "",
+      "actions": {
+        "download": true,
+        "purchase": true,
+        "inquire": true
+      },
+      "featured": true,
+      "dateAdded": "2024-06-01",
+      "sortOrder": 1
+    },
+    {
+      "id": "b2",
+      "title": "Emotional Trap",
+      "genre": "Emotional Trap",
+      "bpm": 0,
+      "duration": "Free Beat Sample",
+      "coverEmoji": "💚",
+      "audioFile": "audio/beat-sample-2.mp3",
+      "tags": ["Emotional", "Trap", "FREE"],
+      "isFree": true,
+      "freeLabel": "FREE",
+      "actions": {
+        "download": true,
+        "purchase": false,
+        "inquire": true,
+        "customBeat": true
+      },
+      "featured": true,
+      "dateAdded": "2024-05-15",
+      "sortOrder": 2
+    },
+    {
+      "id": "b3",
+      "title": "Kalindula Vibes",
+      "genre": "Traditional Fusion",
+      "bpm": 108,
+      "duration": "3:58",
+      "coverEmoji": "🎧",
+      "audioFile": "audio/beat-sample-3.mp3",
+      "tags": ["Traditional", "Fusion", "Zambian"],
+      "isFree": false,
+      "freeLabel": "",
+      "actions": {
+        "download": true,
+        "purchase": true,
+        "inquire": true
+      },
+      "featured": false,
+      "dateAdded": "2024-04-20",
+      "sortOrder": 3
+    },
+    {
+      "id": "b4",
+      "title": "Sunset R&B Groove",
+      "genre": "R&B",
+      "bpm": 85,
+      "duration": "4:02",
+      "coverEmoji": "🎸",
+      "audioFile": "audio/beat-sample-4.mp3",
+      "tags": ["R&B", "Soul", "Slow Jam"],
+      "isFree": false,
+      "freeLabel": "",
+      "actions": {
+        "download": true,
+        "purchase": true,
+        "inquire": true
+      },
+      "featured": false,
+      "dateAdded": "2024-03-10",
+      "sortOrder": 4
+    }
+  ],
+  "cta": {
+    "title": "🎤 Want a Custom Beat?",
+    "description": "Need an original beat tailored to your sound? Let's create something unique together.",
+    "buttonText": "Request Custom Beat",
+    "buttonLink": "#contact"
+  }
+}

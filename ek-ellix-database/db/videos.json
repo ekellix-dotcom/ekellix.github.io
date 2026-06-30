@@ -1,0 +1,89 @@
+{
+  "sectionTitle": "Video Showcase",
+  "sectionSubtitle": "Cinematic video production, event coverage, promotional content, and creative storytelling.",
+  "sectionLabel": "🎬 Video Production",
+  "videos": [
+    {
+      "id": "v1",
+      "type": "youtube",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/eYCzfdeMW0w",
+      "youtubeChannelUrl": "https://youtube.com/@ekellix1921",
+      "poster": "",
+      "title": "EK ELLIX Production",
+      "subtitle": "YouTube • Featured",
+      "description": "Watch our latest video production on YouTube. Subscribe for more content.",
+      "tags": ["YouTube", "Featured", "Production"],
+      "actions": [
+        { "label": "📺 YouTube", "url": "https://youtube.com/@ekellix1921", "external": true },
+        { "label": "💬 WhatsApp", "url": "https://wa.me/260767165702", "external": true }
+      ],
+      "featured": true,
+      "dateAdded": "2024-06-01",
+      "sortOrder": 1
+    },
+    {
+      "id": "v2",
+      "type": "local",
+      "youtubeEmbedUrl": "",
+      "youtubeChannelUrl": "",
+      "poster": "images/founder-2.jpg",
+      "localVideo": "videos/showreel.mp4",
+      "title": "EK ELLIX Cinematic Showreel",
+      "subtitle": "Videography • 2:30",
+      "description": "A showcase of our best cinematography work, events, commercials, and creative projects.",
+      "tags": ["Cinematic", "Showreel", "4K"],
+      "actions": [
+        { "label": "📞 Book Videography", "url": "#contact", "external": false },
+        { "label": "💬 WhatsApp", "url": "https://wa.me/260767165702", "external": true }
+      ],
+      "featured": true,
+      "dateAdded": "2024-05-20",
+      "sortOrder": 2
+    },
+    {
+      "id": "v3",
+      "type": "local",
+      "youtubeEmbedUrl": "",
+      "youtubeChannelUrl": "",
+      "poster": "images/founder-3.png",
+      "localVideo": "videos/event-highlights.mp4",
+      "title": "Event Highlights Reel",
+      "subtitle": "Event Coverage • 3:15",
+      "description": "Capturing the energy and key moments from corporate events, celebrations, and ceremonies.",
+      "tags": ["Events", "Corporate", "Highlights"],
+      "actions": [
+        { "label": "📞 Book Videography", "url": "#contact", "external": false },
+        { "label": "💬 WhatsApp", "url": "https://wa.me/260767165702", "external": true }
+      ],
+      "featured": false,
+      "dateAdded": "2024-04-15",
+      "sortOrder": 3
+    },
+    {
+      "id": "v4",
+      "type": "local",
+      "youtubeEmbedUrl": "",
+      "youtubeChannelUrl": "",
+      "poster": "images/founder-1.jpeg",
+      "localVideo": "videos/promo-sample.mp4",
+      "title": "Promotional Video Sample",
+      "subtitle": "Commercial • 1:45",
+      "description": "Engaging promotional content designed to elevate your brand and connect with your audience.",
+      "tags": ["Promo", "Commercial", "Branding"],
+      "actions": [
+        { "label": "📞 Book Videography", "url": "#contact", "external": false },
+        { "label": "💬 WhatsApp", "url": "https://wa.me/260767165702", "external": true }
+      ],
+      "featured": false,
+      "dateAdded": "2024-03-01",
+      "sortOrder": 4
+    }
+  ],
+  "cta": {
+    "title": "📺 More Videos on YouTube",
+    "description": "Visit our YouTube channel for the full video library, event coverage, music productions, behind-the-scenes, and more.",
+    "buttonText": "Visit YouTube Channel",
+    "buttonUrl": "https://youtube.com/@ekellix1921",
+    "external": true
+  }
+}
