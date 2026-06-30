@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-ZM">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#081426">
+<meta name="color-scheme" content="dark">
+<meta name="format-detection" content="telephone=yes">
+<title>EK ELLIX</title>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23081426'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='sans-serif' font-size='48' font-weight='bold' fill='%230A6CFF'%3EEK%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- Status Bar Space -->
+  <div class="statusbar-space"></div>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <button class="topbar-btn" id="topbar-home" aria-label="Home">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0v-6a1 1 0 011-1h2a1 1 0 011 1v6m-6 0h6"/></svg>
+    </button>
+    <span class="topbar-title">EK ELLIX</span>
+    <a href="https://wa.me/260767165702" target="_blank" rel="noopener" class="topbar-btn" aria-label="WhatsApp" style="text-decoration:none;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.607-.798-6.392-2.143l-.396-.298-3.128 1.048 1.048-3.128-.298-.396A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    </a>
+  </header>
+
+  <!-- Scrollable Content -->
+  <main class="content">
+
+    <!-- ═══ HOME SCREEN ═══ -->
+    <div class="screen active" id="screen-home">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-greeting">Welcome to</div>
+        <div class="hero-title">EK <span class="gradient">ELLIX</span></div>
+        <div class="hero-subtitle">Technology solutions, digital media, creative services & ICT — empowering communities through innovation.</div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="quick-actions">
+        <div class="quick-action" onclick="App.switchTab('booking')">
+          <div class="qa-icon">📅</div>
+          <div class="qa-label">Book Now</div>
+        </div>
+        <div class="quick-action" onclick="App.submitWhatsApp()">
+          <div class="qa-icon" style="background:var(--green-dim);">💬</div>
+          <div class="qa-label">WhatsApp</div>
+        </div>
+        <div class="quick-action" onclick="App.submitCall()">
+          <div class="qa-icon">📞</div>
+          <div class="qa-label">Call Us</div>
+        </div>
+        <div class="quick-action" onclick="App.submitEmail()">
+          <div class="qa-icon">✉️</div>
+          <div class="qa-label">Email</div>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="mt-24">
+        <div class="section-header">
+          <h3>Our Services</h3>
+          <span class="see-all" onclick="App.switchTab('services')">See All →</span>
+        </div>
+        <div class="hscroll" id="home-services">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="mt-24">
+        <div class="section-header">
+          <h3>Client Reviews</h3>
+        </div>
+        <div id="home-testimonials">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="pad mt-24 mb-24">
+        <div style="background:var(--slate);border:1px solid var(--white10);border-radius:var(--radius);padding:24px;text-align:center;">
+          <div style="font-size:28px;margin-bottom:8px;">🚀</div>
+          <h3 style="font-family:var(--font-head);font-size:18px;font-weight:700;margin-bottom:6px;">Ready to Get Started?</h3>
+          <p style="font-size:13px;color:var(--white60);margin-bottom:16px;">Book a service or get a free consultation today.</p>
+          <button class="btn-primary" onclick="App.switchTab('booking')">Book a Service</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══ SERVICES SCREEN ═══ -->
+    <div class="screen" id="screen-services">
+      <div class="pad-lg">
+        <p style="font-size:14px;color:var(--white60);margin-bottom:20px;">Browse our comprehensive range of professional services. Tap any service to book it directly.</p>
+      </div>
+      <div id="services-list" style="padding:0 20px;display:flex;flex-direction:column;gap:10px;">
+        <!-- Rendered by JS on init -->
+      </div>
+    </div>
+
+    <!-- ═══ BOOKING SCREEN ═══ -->
+    <div class="screen" id="screen-booking">
+      <div class="pad-lg" style="padding-bottom:8px;">
+        <div class="info-badge mb-12">📅 Free Consultation</div>
+        <h2 style="font-family:var(--font-head);font-size:22px;font-weight:800;margin-bottom:6px;">Book a Service</h2>
+        <p style="font-size:13px;color:var(--white60);">Fill in your details and we'll get back to you within 24 hours via WhatsApp.</p>
+      </div>
+
+      <form class="booking-form" id="booking-form" onsubmit="event.preventDefault();App.submitBooking();">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-input" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone *</label>
+            <input type="tel" name="phone" class="form-input" placeholder="097XXXXXXX" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Service *</label>
+          <select name="service" id="booking-service" class="form-select" required>
+            <!-- Rendered by JS -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Your Message</label>
+          <textarea name="message" class="form-textarea" placeholder="Tell us about your project or what you need..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Send via WhatsApp
+        </button>
+
+        <div style="margin-top:16px;">
+          <button type="button" class="btn-primary btn-outline" onclick="App.submitCall()">
+            📞 Call Us Instead
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- ═══ PORTFOLIO SCREEN ═══ -->
+    <div class="screen" id="screen-portfolio">
+      <div class="pad-lg" style="padding-bottom:8px;">
+        <h2 style="font-family:var(--font-head);font-size:22px;font-weight:800;margin-bottom:6px;">Our Work</h2>
+        <p style="font-size:13px;color:var(--white60);">A showcase of our recent projects across photography, videography, and design.</p>
+      </div>
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Rendered by JS -->
+      </div>
+      <div class="pad mt-24 mb-24" style="text-align:center;">
+        <button class="btn-primary" onclick="App.switchTab('booking')">📸 Book a Session</button>
+      </div>
+    </div>
+
+    <!-- ═══ CONTACT SCREEN ═══ -->
+    <div class="screen" id="screen-contact">
+      <div class="pad-lg" style="padding-bottom:8px;">
+        <h2 style="font-family:var(--font-head);font-size:22px;font-weight:800;margin-bottom:6px;">Get In Touch</h2>
+        <p style="font-size:13px;color:var(--white60);">Reach us through any of these channels. We respond within 24 hours.</p>
+      </div>
+
+      <!-- Contact Cards -->
+      <div style="padding:0 20px;">
+        <div class="contact-card" onclick="App.submitCall()">
+          <div class="cc-icon blue">📞</div>
+          <div class="cc-info">
+            <h4>Phone</h4>
+            <p>0974206465</p>
+          </div>
+        </div>
+
+        <div class="contact-card" onclick="App.submitWhatsApp()">
+          <div class="cc-icon green">💬</div>
+          <div class="cc-info">
+            <h4>WhatsApp</h4>
+            <p>0767165702</p>
+          </div>
+        </div>
+
+        <div class="contact-card" onclick="App.submitEmail()">
+          <div class="cc-icon blue">✉️</div>
+          <div class="cc-info">
+            <h4>Email</h4>
+            <p>ekellix@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="cc-icon blue">📍</div>
+          <div class="cc-info">
+            <h4>Locations</h4>
+            <p style="color:var(--white60);font-size:12px;">Chinsali & Chisamba, Zambia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Working Hours -->
+      <div class="section-header" style="margin-bottom:8px;">
+        <h3>Working Hours</h3>
+      </div>
+      <div class="hours-list">
+        <div class="hours-item"><span class="day">Monday</span><span class="time">8:00 AM – 6:00 PM</span></div>
+        <div class="hours-item"><span class="day">Tuesday</span><span class="time">8:00 AM – 6:00 PM</span></div>
+        <div class="hours-item"><span class="day">Wednesday</span><span class="time">8:00 AM – 6:00 PM</span></div>
+        <div class="hours-item"><span class="day">Thursday</span><span class="time">8:00 AM – 6:00 PM</span></div>
+        <div class="hours-item"><span class="day">Friday</span><span class="time">8:00 AM – 6:00 PM</span></div>
+        <div class="hours-item"><span class="day">Saturday</span><span class="closed">Closed</span></div>
+        <div class="hours-item"><span class="day">Sunday</span><span class="closed">Closed</span></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Map -->
+      <div class="section-header" style="margin-bottom:8px;">
+        <h3>Our Locations</h3>
+      </div>
+      <div class="map-box">
+        <div class="map-icon">📍</div>
+        <div style="font-weight:600;font-size:14px;">Chinsali & Chisamba</div>
+        <div style="font-size:12px;color:var(--white60);">Zambia</div>
+        <div style="font-size:11px;color:var(--blue);">Serving clients across Zambia</div>
+      </div>
+
+      <!-- Quick Book -->
+      <div class="pad mb-24" style="text-align:center;">
+        <button class="btn-primary" onclick="App.switchTab('booking')">📅 Book a Service</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Tab Bar -->
+  <nav class="tabbar" role="navigation" aria-label="Main navigation">
+    <button class="tab-item active" data-screen="home">
+      <span class="tab-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0v-6a1 1 0 011-1h2a1 1 0 011 1v6m-6 0h6"/></svg>
+      </span>
+      <span>Home</span>
+    </button>
+    <button class="tab-item" data-screen="services">
+      <span class="tab-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+      </span>
+      <span>Services</span>
+    </button>
+    <button class="tab-item" data-screen="booking">
+      <span class="tab-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
+      </span>
+      <span>Book</span>
+    </button>
+    <button class="tab-item" data-screen="portfolio">
+      <span class="tab-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.181 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.181 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z"/></svg>
+      </span>
+      <span>Portfolio</span>
+    </button>
+    <button class="tab-item" data-screen="contact">
+      <span class="tab-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 2.852c-.125-.501-.575-.852-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+      </span>
+      <span>Contact</span>
+    </button>
+  </nav>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+</div>
+
+<script src="js/app.js"></script>
+<script>
+  /* Also render the services full list */
+  document.addEventListener('DOMContentLoaded', () => {
+    const list = document.getElementById('services-list');
+    if (list) {
+      list.innerHTML = App.services.map(s =>
+        `<div class="contact-card" onclick="App.switchTab('booking');App.preselectService('${s.id}')">
+          <div class="cc-icon blue" style="font-size:28px;">${s.icon}</div>
+          <div class="cc-info">
+            <h4>${s.name}</h4>
+            <p style="color:var(--white60);font-size:12px;">${s.desc}</p>
+          </div>
+        </div>`
+      ).join('');
+    }
+  });
+</script>
+</body>
+</html>
